@@ -2,9 +2,9 @@
 
 import React from "react";
 
-import Hero from "./Components/Hero";
-import Cards from "./Components/CardsN";
-import Faq from "./Components/Faq";
+import Hero from "./Components/Ctas/Hero";
+import Cards from "./Components/Util/_CardsN";
+import Faq from "./Components/Content/Faq";
 
 const cards = [
   {
@@ -131,7 +131,7 @@ export default function Home() {
           title="AURORA"
           tagline="Enlighten your tax worries."
           ctas={ctas}
-          itemformat="border border-(--border) snowflake text-2xl text-(--text-primary) rounded-2xl animate-float hover:bg-(--primary)"
+          itemformat="btn"
           listformat=""
         />
       </section>

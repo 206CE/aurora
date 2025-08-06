@@ -1,11 +1,11 @@
-"use client";
+
 
 import "./globals.css";
 import Link from "next/link";
 
 
-import Navigation from "./Components/Navigation";
-import Logo from "./Components/Logo";
+import Navigation from "./Components/Nav/Navigation";
+import Logo from "./Components/Content/Logo";
 
 /* import Social from "./Components/Social"; */
 
@@ -35,7 +35,7 @@ export const metadata = {
   description: "Enlightening your Tax Worries",
   metadataBase: new URL("https://..."),
   openGraph: {
-    title: "",
+    title: "fda",
     description: "",
     url: "",
     siteName: "",
@@ -47,7 +47,7 @@ export const metadata = {
         alt: "",
       },
     ],
-    type: "",
+    type: "website",
   },
   twitter: {
     card: "",
@@ -86,12 +86,12 @@ export default function RootLayout({
           <div className=" flex-grow ml-20 ">
             <Navigation
               items={items}
-              itemClassName="button"
+              itemClassName="btn p-2 border"
             />
           </div>
 
           {/* CTA Link - shown on medium and up */}
-          <div className="hidden lg:inline cta-button  ">
+          <div className="hidden lg:inline btn  ">
             <Link className=" " href="/Contact">
               <span>Get a free quote</span>
             </Link>
