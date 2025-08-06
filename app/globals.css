@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+
+
+:root {
+  --background: #f8fbff;               /* light blueish white */
+
+  --passive-text: #60a5fa;             /* softened from #acd7ff for better readability */
+  --passive-surface: #e3ecf6;          /* lighter passive background */
+  --passive-border: #c3d0e0;           /* subtle passive border */
+
+  --active-text: #1e3a8a;              /* rich readable blue for hover text */
+  --active-surface: #dbeafe;           /* light blue for hover background */
+  --active-border: #3b82f6;            /* clear blue border for active state */
+
+  --text-primary: #1a3d66;             /* main headings */
+  --text-secondary: #1a1a1a;           /* subheadings */
+  --text-tertiary: #4b5563;            /* tertiary, muted for readability */
+
+  --text-accent: #0f6ab6;              /* call to action text */
+  --surface-accent: #004aad;           /* CTA backgrounds or important areas */
+}
+
+
+.button {
+  background-color: var(--passive-surface);
+  color: var(--passive-text); /* now #60a5fa */
+  border: 1px solid var(--passive-border);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--active-surface);
+  color: var(--active-text); /* should also contrast well */
+  border-color: var(--active-border);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2); /* using the new blue */
+}
+
+
+.card {
+  background-color: var(--passive-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--passive-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--active-surface);
+  border-color: var(--active-border);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.15);
+  transform: translateY(-5px);
+}
+
+
+.cta-button {
+  background-color: var(--surface-accent);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  animation: pulse 2s infinite;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 74, 173, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 74, 173, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 74, 173, 0); }
+}
+
+
+
+
+
+
+
+
+/* Arctic Background */
+.arctic-background {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #30b5e9, #0d88a3, #29cec6);
+  position: relative;
+}
+
+/* Aurora Effect */
+.aurora-effect {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  z-index: -100;
+}
+
+.aurora-effect::before,
+.aurora-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 16rem;
+  filter: blur(10px);
+}
+
+.aurora-effect::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(137, 43, 226, 0.521),
+    transparent
+  );
+}
+
+.aurora-effect::after {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    transparent,
+    rgba(179, 60, 163, 0.459),
+    transparent
+  );
+}
+
+/* Snowflakes */
+
+.snowflake {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--accent-two);
+  animation: float 5s ease-in-out infinite;
+}
+
+.snowflake:hover {
+  background-color: var(--primary);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
