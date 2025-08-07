@@ -4,102 +4,59 @@
 
 :root {
 
-  --passive-text: #60a5fa;             /* softened from #acd7ff for better readability */
-  --passive-surface: ;          /* lighter passive background */
-  --active-surface: #dbeafe;           /* light blue for hover background */
-  --active-border: #3b82f6;            /* clear blue border for active state */
-
 /* Backgrounds/Surfaces */
-  
-  --background: #0A0A10;           /* Deep Space Black */
-  --surface: ;              /* Dark Steel Panel */
-  
-  
-  --bg-primary: #f8fbff;
-  --bg-secondary: #e3ecf6;
-  --bg-tertiary: #1C1C27;
-  --bg-hover: ;
-  --bg-inverted: ;
-  --bg-overlay: ;
+--bg-primary: #FFFFFF;      /* main page background */
+--surface: #F8F8F8;      
+--surface-hover: #E0E0E0;
 
+/* === Borders & Dividers === */
+--border: #D3D3D3;          /**/
+--divider: #EAEAEA;                  /**/
 
-  /* === Borders & Dividers === */
-  --border: #c3d0e0;
-  --divider: rgba(255, 255, 255, 0.05);
+/* Brand Colors */
+--primary: #0077C2;         /**/
+--primary-light: #4D9FDC;            /**/
+--primary-dark: #004F8A;             /**/
 
-  /* === Glows & Effects === */
-  --glow-sun: rgba(255, 107, 53, 0.4);
-  --glow-tech: rgba(79, 131, 202, 0.3);
-  --glass-overlay: rgba(255, 255, 255, 0.05); /* Futuristic glass effect */
-  
-  /* Brand Colors */
+--secondary: #2B3A4F;                /**/
+--secondary-light: #5A6D83;          /**/
+--secondary-dark: #1A2534;           /**/
 
-  --sun-core: #FF3E3E;             /* Red-Hot Core */
-  --sun-inner-glow: #FF6B35;       /* Orange Plasma */
-  --sun-outer-glow: #FFD166;       /* Solar Flare Yellow */
+--tertiary: #A0A0A0;                 /**/
+--tertiary-light: #CCCCCC;           /**/
+--tertiary-dark: #7A7A7A;            /**/
 
-  --tech-panel: ;           /* Matte Black Alloy */
-  --tech-accent: #4F83CA;          /* High-Energy Blue */
-  --tech-hologram: #7DB9E8;        /* Holo-Cyan Glow */
-  --tech-wire: #F2E205;            /* Energy Conduit Gold */
+--accent: #E0E0E0;                   /**/
+--accent-light: #F0F0F0;             /**/
+--accent-dark: #B0B0B0;              /**/
 
-  --primary: #1e3a8a;
-  --primary-light: ;
-  --primary-dark: ;
+/* Feedback colors */
+--success: #28A745;       /* */
+--warning: #FFC107;       /**/
+--error: #DC3545;         /* */
+--info: #17A2B8;
 
-  --secondary: ;
-  --secondary-light: ;
-  --secondary-dark: ;
-
-  --tertiary: ;
-  --tertiary-light: ;
-  --tertiary-dark: ;
-
-  --accent: ;
-  --accent-light: ;
-  --accent-dark: ;
-
-  /* Feedback colors */
-  
-    --success: #7ED321;              /* Green = System Stable */
-    --warning: #FFA700;              /* Warning / Caution Mode */
-    --error: #FF3B30;                /* Error / Critical Alert */
-    --info: ;
-
-    /* Typography */
-
-  --text-primary: #1a3d66;             /* main headings */
-  --text-secondary: #1a1a1a;
-  --text-tertiary: #4b5563;
-  --text-disabled: ;
-  --text-inverted: ;
-  --text-link: ;
-  --text-link-hover: ;
+/* Typography */
+--text-primary: #2B3A4F;    /* main headings */
+--text-secondary: #5A6D83;  /**/
+--text-tertiary: #A0A0A0;            /**/
+--text-disabled: #B0B0B0;            /**/
+--text-inverted: #FFFFFF;            /**/
+--text-link: #0077C2;                /**/
+--text-link-hover: #004F8A;          /**/
 
 /* Interactive Elements */
+--btn-bg: #0077C2;
+--btn-text: #FFFFFF;
+--btn-hover-bg: #004F8A;
+--btn-hover-text: #FFFFFF;
+--btn-disabled-bg: #B0B0B0;
+--btn-disabled-text: #E0E0E0;
 
-    /* === Hover States & Variants === */
-  --primary-hover: #E6B95C;
-  --secondary-hover: #3D6BC0;
-  --accent-hover: #E05A2C;
-  /* === UI & Interactive Elements === */
-  --primary: #FFD166;              /* Main UI Highlight (Solar Yellow) */
-  --secondary: #4F83CA;            /* Secondary UI (Plasma Blue) */
-  --accent: #FF6B35;               /* Accent UI (Flame Orange) */
-
-  --btn-bg:  #004aad;
-  --btn-text: #0f6ab6;
-  --btn-hover-bg: var(--color-primary-dark);
-  --btn-hover-text: var(--primary-hover)
-  --btn-disabled-bg: var(--color-gray-300);
-  --btn-disabled-text: var(--color-gray-500);
-
-  --input-bg: var(--color-white);
-  --input-border: var(--color-gray-300);
-  --input-focus: var(--color-primary);
-  --input-placeholder: var(--color-gray-400);
-
-
+--input-bg: #FFFFFF;
+--input-border: #D3D3D3;
+--input-focus: #0077C2;
+--input-placeholder: #A0A0A0;
   
 }
 

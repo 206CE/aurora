@@ -1,11 +1,10 @@
 
 
 import "./globals.css";
-import Link from "next/link";
-
 
 import Navigation from "./Components/Nav/Navigation";
 import Logo from "./Components/Content/Logo";
+import Cta from "./Components/Ctas/Cta";
 
 /* import Social from "./Components/Social"; */
 
@@ -69,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-[url(/background.png)] bg-cover  ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
         <header className="flex flex-wrap items-center justify-between p-5  gap-10 text-(--text-primary)">
@@ -86,15 +85,14 @@ export default function RootLayout({
           <div className=" flex-grow ml-20 ">
             <Navigation
               items={items}
-              itemClassName="btn p-2 border"
+              itemClassName="btn p-2 border rounded-lg"
             />
           </div>
 
           {/* CTA Link - shown on medium and up */}
           <div className="hidden lg:inline btn  ">
-            <Link className=" " href="/Contact">
-              <span>Get a free quote</span>
-            </Link>
+            <Cta ctas={[{label:'Get a free quote',href:'/Contact'}]} itemClassFormat="p-2 border rounded-lg"/>
+
           </div>
         </header>
 

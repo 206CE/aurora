@@ -1,4 +1,4 @@
-import TeamMembers from "@/app/Components/Team";
+import TeamMembers from "@/app/Components/Util/_Team";
 
 
 const team = [
