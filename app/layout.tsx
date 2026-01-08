@@ -82,16 +82,16 @@ export default function RootLayout({
           </div>
 
           {/* Desktop Navbar */}
-          <div className=" flex-grow ml-20 ">
+          <div className="grow ml-20 ">
             <Navigation
               items={items}
-              itemClassName="btn p-2 border rounded-lg"
+              itemClassName=" btn p-2 border rounded-lg"
             />
           </div>
 
           {/* CTA Link - shown on medium and up */}
-          <div className="hidden lg:inline btn  ">
-            <Cta ctas={[{label:'Get a free quote',href:'/Contact'}]} itemClassFormat="p-2 border rounded-lg"/>
+          <div className="hidden lg:inline   ">
+            <Cta ctas={[{label:'Get a free quote',href:'/Contact'}]} itemClassFormat="btn p-2 border rounded-lg"/>
 
           </div>
         </header>
@@ -99,7 +99,7 @@ export default function RootLayout({
         {children}
 
         <footer className="flex flex-wrap items-center justify-between p-4 gap-4">
-          <div className="flex-shrink-0 button">
+          <div className="shrink-0 button">
             <Logo
               imagePath="/logo.png"
               size={40}
@@ -108,10 +108,10 @@ export default function RootLayout({
             />
             <span className="text-sm">Enlighten your tax worries.</span>
           </div>
-          <div className="hidden md:block flex-grow text-center ml-20">
+          <div className="hidden md:block grow text-center ml-20">
             <Navigation
               items={items}
-              itemClassName="button "
+              itemClassName="btn p-2 border rounded-lg "
             />
           </div>
           <div className="mr-20">
